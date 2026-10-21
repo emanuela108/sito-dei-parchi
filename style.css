@@ -56,7 +56,10 @@ nav a { text-decoration: none; color: #222; font-weight: 500; }
     grid-template-columns: 1fr 1fr; 
     gap: 30px;
 }
-
+.parks-grid a {
+    text-decoration: none;
+    color: white;
+}
  
 .activities-section { display: flex; gap: 50px; margin-bottom: 80px; }
 .activities-intro { flex: 1; }
