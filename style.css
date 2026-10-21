@@ -27,7 +27,8 @@ nav a { text-decoration: none; color: #222; font-weight: 500; }
     border-radius: 10px;
 }
 .hero-wrapper { height: 500px; margin-bottom: 60px; }
-.park-card { height: 350px; }
+.park-card { height: 350px; text decoration: none }
+
 
 .hero-img, .card-img {
     position: absolute; 
