@@ -163,9 +163,9 @@ nav a { text-decoration: none; color: #222; font-weight: 500; }
 
     .parks-grid,
     .parks-list {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-        gap: 24px !important;
+        display: grid ;
+        grid-template-columns: 1fr;
+        gap: 24px ;
     }
 
     .park-card {
@@ -201,7 +201,7 @@ nav a { text-decoration: none; color: #222; font-weight: 500; }
 
     .parks-grid,
     .parks-list {
-        gap: 20px !important;
+        gap: 20px;
     }
 
     .park-card {
