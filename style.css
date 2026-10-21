@@ -129,3 +129,86 @@ nav a { text-decoration: none; color: #222; font-weight: 500; }
 .parks-grid-3 .park-card {
     height: 300px;
 }
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .main-header {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .hero-wrapper {
+        height: 320px;
+        margin-bottom: 40px;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .featured-parks {
+        margin-bottom: 50px;
+    }
+
+    .featured-parks h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .parks-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .park-card {
+        height: 280px;
+    }
+
+    .card-info {
+        padding: 20px;
+    }
+
+    .activities-section {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .activities-intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .activities-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-wrapper {
+        height: 260px;
+    }
+
+    .park-card {
+        height: 240px;
+    }
+}
