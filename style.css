@@ -27,8 +27,7 @@ nav a { text-decoration: none; color: #222; font-weight: 500; }
     border-radius: 10px;
 }
 .hero-wrapper { height: 500px; margin-bottom: 60px; }
-.park-card { height: 350px; text decoration: none }
-
+.park-card { height: 350px; }
 
 .hero-img, .card-img {
     position: absolute; 
@@ -60,6 +59,7 @@ nav a { text-decoration: none; color: #222; font-weight: 500; }
     text-decoration: none;
     color: white;
 }
+
  
 .activities-section { display: flex; gap: 50px; margin-bottom: 80px; }
 .activities-intro { flex: 1; }
@@ -129,6 +129,7 @@ nav a { text-decoration: none; color: #222; font-weight: 500; }
 .parks-grid-3 .park-card {
     height: 300px;
 }
+
 @media (max-width: 768px) {
     .container {
         padding: 0 16px;
@@ -141,7 +142,7 @@ nav a { text-decoration: none; color: #222; font-weight: 500; }
         padding: 15px 0;
     }
 
-   nav ul {
+    nav ul {
         flex-direction: row;
         align-items: center;
         gap: 10px;
@@ -153,6 +154,7 @@ nav a { text-decoration: none; color: #222; font-weight: 500; }
     nav ul a {
         white-space: nowrap;
     }
+
     .hero-wrapper {
         height: 320px;
         margin-bottom: 40px;
