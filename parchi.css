@@ -120,20 +120,25 @@ nav a { text-decoration: none; color: #222; font-weight: 500; }
     .container {
         padding: 0 16px;
     }
-
+ 
     .main-header {
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
+        gap: 15px;
         padding: 15px 0;
     }
 
     nav ul {
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
+        align-items: center;
+        gap: 10px;
         padding: 0;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    nav ul a {
+        white-space: nowrap;
     }
 
     .page-header,
@@ -163,9 +168,9 @@ nav a { text-decoration: none; color: #222; font-weight: 500; }
 
     .parks-grid,
     .parks-list {
-        display: grid ;
+        display: grid;
         grid-template-columns: 1fr;
-        gap: 24px ;
+        gap: 24px;
     }
 
     .park-card {
