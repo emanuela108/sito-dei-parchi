@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -10,27 +11,28 @@ body {
     color: #222;
 }
 
-.logo {
-    text-decoration: none; 
-    color: #222;           
-    font-size: 1.5rem;     
-}
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
+.logo {
+    text-decoration: none; 
+    color: #222;           
+    font-size: 1.5rem;     
+}
+
+
 h1, h2, h3, .logo {
     font-family: 'Young Serif', serif;
     font-weight: 400;
 }
 
+
 .main-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 30px 0;
 }
 
@@ -96,37 +98,32 @@ nav a {
     line-height: 1.4;
 }
 
-.editorial-layout,
-.park-detail-layout {
+.editorial-layout {
     display: flex;
     gap: 80px;
     margin-bottom: 60px;
     align-items: flex-start;
 }
 
-.article-content,
-.park-info {
+.article-content {
     flex: 1;
     max-width: 750px;
 }
 
-.article-content p,
-.park-info p {
+.article-content p {
     margin-bottom: 20px;
     line-height: 1.6;
     font-size: 0.95rem;
     color: #333;
 }
 
-.article-content h2,
-.park-info h2 {
+.article-content h2 {
     font-size: 1.6rem;
     margin: 40px 0 15px 0;
     color: #111;
 }
 
-.article-content h2:first-child,
-.park-info h2:first-child {
+.article-content h2:first-child {
     margin-top: 0;
 }
 
@@ -166,42 +163,33 @@ nav a {
     color: #EBB833;
 }
 
-.info-box,
-.useful-info {
+.info-box {
     background-color: #314A43;
-    color: #ffffff;
-    padding: 42px 48px;
-    border-radius: 16px;
-    margin-top: 40px;
-    margin-bottom: 80px;
-    width: calc(100% + 345px);
-    max-width: none;
-    box-sizing: border-box;
+    color: white;
+    padding: 50px;
+    border-radius: 12px;
+    margin-bottom: 100px;
 }
 
-.info-box h2,
-.useful-info h2 {
-    font-family: 'Young Serif', serif;
+.info-box h2 {
     color: #EBB833;
-    font-size: 1.85rem;
+    font-size: 1.6rem;
     margin-top: 0;
-    margin-bottom: 22px;
-    line-height: 1.25;
+    margin-bottom: 25px;
 }
 
-.info-box p,
-.useful-info p {
-    color: rgba(255, 255, 255, 0.92);
-    line-height: 1.65;
-    font-size: 0.96rem;
-    margin-bottom: 18px;
-    max-width: none;
+.info-box p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    max-width: 950px;
 }
 
-.info-box p:last-child,
-.useful-info p:last-child {
+.info-box p:last-child {
     margin-bottom: 0;
 }
+
 
 .main-footer {
     background-color: #314A43;
@@ -234,45 +222,35 @@ nav a {
 }
 
 @media (max-width: 768px) {
-    .container {
+     .container {
         padding: 0 16px;
-        width: 100%;
     }
 
-       .main-header {
-        display: flex;
+    .main-header {
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
+        gap: 15px;
         padding: 15px 0;
-        width: calc(100% + 145px);
-        max-width: none;
-    }
-
-    .logo {
-        font-size: 1.4rem;
     }
 
     nav ul {
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
+        align-items: center;
+        gap: 10px;
         padding: 0;
-        margin: 0;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
-
-    nav a {
-        font-size: 0.88rem;
+    nav ul a {
         white-space: nowrap;
     }
 
+
     .hero-wrapper {
-        height: 220px;
+        height: 260px;
         margin-bottom: 25px;
         border-radius: 8px;
-        width:calc(100% + 145px);
-        max-width: none;
     }
 
     .hero-content {
@@ -280,13 +258,13 @@ nav a {
     }
 
     .hero-content h1 {
-        font-size: 1.45rem;
+        font-size: 1.75rem;
         line-height: 1.25;
         margin-bottom: 6px;
     }
 
     .hero-content p {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         line-height: 1.4;
     }
 
@@ -302,18 +280,9 @@ nav a {
         margin-bottom: 35px;
     }
 
-    .editorial-layout {
-        display: flex;
-        flex-direction: row; 
-        align-items: flex-start;
-        gap: 15px; 
-    }
-
-    .article-content,
     .park-info,
     .park-description {
-        flex: 1;
-        width: auto;
+        width: 100%;
         max-width: 100%;
     }
 
@@ -333,38 +302,53 @@ nav a {
         margin-bottom: 14px;
     }
 
+    .editorial-layout {
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        align-items: flex-start;
+    }
+
+    .article-content {
+        flex: 1 1 60%;
+        min-width: 0; 
+        width: auto;
+    }
+
     .sidebar {
-        width: 130px; 
-        flex-shrink: 0;
-        order: 0; 
-        margin: 0;
+        flex: 0 0 35%;
+        width: auto;
+        max-width: none;
+        min-width: 0;
     }
 
     .sidebar-menu {
         position: static;
         border-left: 3px solid #EBB833;
-        padding-left: 10px;
+        padding-left: 14px;
     }
 
     .info-box,
     .info-sidebar,
     .useful-info {
         display: block;
-        width: 100vw;
+        width: 100%;
         max-width: 100%;
-        margin-left: 0%;
-
+        min-width: 100%;
+        margin-left: 0;
+        box-sizing: border-box;
         border-radius: 14px;
         padding: 28px 22px;
         margin-top: 32px;
         margin-bottom: 35px;
-        box-sizing: border-box;
     }
 
     .info-box h2,
     .info-box h3,
     .info-sidebar h2,
     .info-sidebar h3,
+    aside h2,
+    aside h3,
     .useful-info h2,
     .useful-info h3 {
         font-size: 1.45rem;
@@ -374,26 +358,24 @@ nav a {
 
     .info-box p,
     .info-sidebar p,
+    aside p,
     .useful-info p {
         font-size: 0.9rem;
         line-height: 1.55;
         margin-bottom: 14px;
     }
-.main-footer {
-     width: calc(100% + 145px);
-     max-width: none;
-     }
 
-     .footer-grid {
+    .footer-grid {
         flex-direction: row;
         gap: 24px;
     }
 
     .copyright {
         margin-top: 24px;
+    }
 }
-}
-     @media (max-width: 480px) {
+
+@media (max-width: 480px) {
     .main-header {
         flex-direction: column;
         gap: 10px;
@@ -418,4 +400,4 @@ nav a {
         padding: 22px 18px;
         border-radius: 12px;
     }
-    }
+}
